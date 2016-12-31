@@ -1,0 +1,67 @@
+% LaTeX resume using res.cls
+\documentclass[margin]{res}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+\setlength{\textwidth}{5in} % set width of text portion
+% \vspace*{-6mm}
+
+\begin{document}
+\vspace*{-2.0cm}
+% Center the name over the entire width of resume:
+ \moveleft.5\hoffset\centerline{\large\bf Karan Agarwal}
+ \moveleft.5\hoffset\centerline{\url{http://karanagarwal.me}}
+% Draw a horizontal line the whole width of resume:
+ \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+% address begins here
+% Again, the address lines must be centered over entire width of resume:
+% \moveleft.5\hoffset\centerline{The LNM Institute of Information Technology}
+% \moveleft.5\hoffset\centerline{Sumel, Via-Jamdoli, Jaipur 302031. India}
+% \moveleft.5\hoffset\centerline{example@email.com}
+% \moveleft.5\hoffset\centerline{+91-123-456-7890}
+%
+
+% \noindent\makebox[\textwidth]{example@email.com,example@email.com\hfill +91-123-456-7890}
+
+
+\begin{resume}
+
+\section{EDUCATION}
+
+\begin{tabular}{|c|c|c|c|}
+
+\hline
+\textbf{Degree} & \textbf{Year} & {Institution/Board} & {CPI/\%} \\
+\hline
+B.Tech & 2019 (Expected) & LNM Institute of Information Technology, Jaipur & 8.35/10 \\
+\hline
+XII & 2015 & St. Xavier’s Sr. Sec. School, Jaipur (CBSE) & 87.2\% \\
+\hline
+X & 2013 & St. Xavier’s Sr. Sec. School, Jaipur (CBSE) & 91.2\% \\
+\hline
+\end{tabular}
+
+\section{TECHNICAL \\ SKILLS}
+  {\textbf{Languages}:} JavaScript, C\\
+	{\textbf{Web Development}:} JavaScript, HTML/CSS\\
+  {\textbf{Frameworks}:} Node.Js , Express.Js\\
+  {\textbf{Databases}:} MongoDB\\
+  {\textbf{Libraries Explored}:} Jquery, Bootstrap, Cheerio.Js\\
+  {\textbf{Others}:} Git
+  {\textbf{Platforms}:} GNU/Linux
+
+\section{POSITIONS OF\\ RESPONSIBIL-\\ITY}
+    Teaching Assistant (TA) for Computer Programming Course. \hfill July `16 - Dec `16\\
+
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+  \end{footnotesize}
+\end{center}
+
+\end{resume}
+\end{document}
